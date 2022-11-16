@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "page6.html",
+    "currentPage": "page10.html",
     "theme": {
       "name": "sportamp",
       "title": "SportAMP",
@@ -3950,6 +3950,9 @@
               "color": "#fe7902"
             },
             ".mbr-text3": {
+              "text-align": "left"
+            },
+            ".mbr-text2": {
               "text-align": "left"
             }
           },
