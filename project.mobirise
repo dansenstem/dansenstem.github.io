@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "page13.html",
+    "currentPage": "page9.html",
     "theme": {
       "name": "sportamp",
       "title": "SportAMP",
@@ -3344,7 +3344,7 @@
     },
     "page9.html": {
       "settings": {
-        "title": "Kennismakingsdag Stembevrijding",
+        "title": "Workshop Ik Zing?!",
         "order": 10
       },
       "components": [
