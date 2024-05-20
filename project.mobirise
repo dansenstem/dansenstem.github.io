@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "page9.html",
+    "currentPage": "page2.html",
     "theme": {
       "name": "sportamp",
       "title": "SportAMP",
@@ -95,7 +95,7 @@
     ],
     "imageResize": true,
     "uniqCompNum": 173,
-    "versionPublish": "5.8.4",
+    "versionPublish": "5.9.18",
     "screenshot": "screenshot.png",
     "favicon": false,
     "robotsSwitcher": false,
@@ -970,77 +970,6 @@
         {
           "alias": false,
           "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              ".mbr-overlay": {
-                "background-color": "@overlayColor",
-                "opacity": "@overlayOpacity"
-              }
-            },
-            "@media (max-width: 768px)": {
-              ".title-wrap": {
-                "padding-bottom": "2rem"
-              }
-            },
-            ".mbr-section-title": {
-              "color": "#81aa97"
-            },
-            ".mbr-text": {
-              "color": "#81aa97"
-            }
-          },
-          "_name": "article1",
-          "_customHTML": "<section class=\"article1\" group=\"Article\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"title\" mbr-class=\"{'align-center':titleAlign==2,\n                         'align-right':titleAlign==3}\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\">Stembevrijding</span></h3>\n            <h4 class=\"mbr-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text\">Zingen is heerlijk. Én iedereen kan zingen!</h4>\n        </div>\n    </div>\n</section>",
-          "_cid": "rTBC89URzG",
-          "_anchor": "article1-f",
-          "_sourceTheme": "sportamp",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "background-color": "@bgColor",
-            ".image": {
-              "& when not (@rowReverse)": {
-                "@media (min-width: 992px)": {
-                  "padding-left": "1rem",
-                  "padding-right": "3rem"
-                }
-              },
-              "& when (@rowReverse)": {
-                "@media (min-width: 992px)": {
-                  "padding-left": "3rem",
-                  "padding-right": "1rem"
-                }
-              },
-              "@media (max-width: 991px)": {
-                "padding-bottom": "1rem"
-              }
-            }
-          },
-          "_name": "article3",
-          "_customHTML": "<section class=\"article3\" group=\"Articles\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n    <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n    <input type=\"range\" inline=\"\" title=\"Media Size\" name=\"mediaSize\" min=\"1\" max=\"5\" step=\"1\" value=\"3\">\n    <input type=\"checkbox\" name=\"rowReverse\" title=\"Reverse\">\n    <select title=\"Text Align\" name=\"align\">\n        <option value=\"1\" selected=\"\">Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <div class=\"container\">\n        <div class=\"mbr-row mbr-px-4\" mbr-class=\"{'mbr-row-reverse' : rowReverse}\">\n            <div class=\"image mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-3': mediaSize == 1,\n                             'mbr-col-lg-4': mediaSize==2,\n                             'mbr-col-lg-6': mediaSize==3,\n                             'mbr-col-lg-8': mediaSize==4,\n                             'mbr-col-lg-9': mediaSize==5}\">\n                <amp-img src=\"@PROJECT_PATH@/assets/images/buiten-dans-vrouw-tussen-graan-2526x1684.jpeg\" layout=\"responsive\" width=\"526.3436376707405\" height=\"336\" alt=\"image\" class=\"mobirise-loader\">\n                    <div placeholder=\"\" class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/buiten-dans-vrouw-tussen-graan-2526x1684.jpeg\" alt=\"\" title=\"\">\n                </amp-img>\n            </div>\n            <div class=\"text-wrap mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-3': mediaSize == 5,\n                             'mbr-col-lg-4': mediaSize==4,\n                             'mbr-col-lg-6': mediaSize==3,\n                             'mbr-col-lg-8': mediaSize==2,\n                             'mbr-col-lg-9': mediaSize==1,\n                             'align-center': align == 2,\n                             'align-right': align == 3}\">\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\">Stembevrijding gaat over het steeds vrijer gebruiken van je stem, steeds vrijer zingen. Niet om een lied zo perfect mogelijk uit te voeren, maar om te zingen wat er in je leeft. Moeiteloos. <br><br>Je laat je eigen muziek klinken, jouw eigen lied. Dat is niet ingewikkeld. Dat is eigenlijk heel eenvoudig, want niemand kan dat lied beter zingen dan jezelf. Alles wat in je leeft kan en wil bezongen worden! Zingen is daarmee een prachtige ingang naar binnen, naar verbinding met jezelf en de wereld om je heen. \n<br>Natuurlijk kun je daarin ook ongemak of frustratie tegenkomen. En ook dat kun je voluit bezingen. Dat is lekker om te doen, spannend op z’n tijd, versterkt je kracht en zelfvertrouwen én het geeft bovenal ruimte in je stem.\n<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "rTBBXioCRg",
-          "_anchor": "article3-d",
-          "_sourceTheme": "sportamp",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
             "background-color": "@menuBgColor",
             "padding": "0",
             ".navbar": {
@@ -1142,6 +1071,77 @@
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".title-wrap": {
+                "padding-bottom": "2rem"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#81aa97"
+            },
+            ".mbr-text": {
+              "color": "#81aa97"
+            }
+          },
+          "_name": "article1",
+          "_customHTML": "<section class=\"article1\" group=\"Article\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"title\" mbr-class=\"{'align-center':titleAlign==2,\n                         'align-right':titleAlign==3}\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\">Stembevrijding</span></h3>\n            <h4 class=\"mbr-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text\">Zingen is heerlijk. Én iedereen kan zingen!</h4>\n        </div>\n    </div>\n</section>",
+          "_cid": "rTBC89URzG",
+          "_anchor": "article1-f",
+          "_sourceTheme": "sportamp",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            ".image": {
+              "& when not (@rowReverse)": {
+                "@media (min-width: 992px)": {
+                  "padding-left": "1rem",
+                  "padding-right": "3rem"
+                }
+              },
+              "& when (@rowReverse)": {
+                "@media (min-width: 992px)": {
+                  "padding-left": "3rem",
+                  "padding-right": "1rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                "padding-bottom": "1rem"
+              }
+            }
+          },
+          "_name": "article3",
+          "_customHTML": "<section class=\"article3\" group=\"Articles\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n    <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n    <input type=\"range\" inline=\"\" title=\"Media Size\" name=\"mediaSize\" min=\"1\" max=\"5\" step=\"1\" value=\"3\">\n    <input type=\"checkbox\" name=\"rowReverse\" title=\"Reverse\">\n    <select title=\"Text Align\" name=\"align\">\n        <option value=\"1\" selected=\"\">Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <div class=\"container\">\n        <div class=\"mbr-row mbr-px-4\" mbr-class=\"{'mbr-row-reverse' : rowReverse}\">\n            <div class=\"image mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-3': mediaSize == 1,\n                             'mbr-col-lg-4': mediaSize==2,\n                             'mbr-col-lg-6': mediaSize==3,\n                             'mbr-col-lg-8': mediaSize==4,\n                             'mbr-col-lg-9': mediaSize==5}\">\n                <amp-img src=\"@PROJECT_PATH@/assets/images/buiten-dans-vrouw-tussen-graan-2526x1684.jpeg\" layout=\"responsive\" width=\"526.3436376707405\" height=\"336\" alt=\"image\" class=\"mobirise-loader\">\n                    <div placeholder=\"\" class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/buiten-dans-vrouw-tussen-graan-2526x1684.jpeg\" alt=\"\" title=\"\">\n                </amp-img>\n            </div>\n            <div class=\"text-wrap mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-3': mediaSize == 5,\n                             'mbr-col-lg-4': mediaSize==4,\n                             'mbr-col-lg-6': mediaSize==3,\n                             'mbr-col-lg-8': mediaSize==2,\n                             'mbr-col-lg-9': mediaSize==1,\n                             'align-center': align == 2,\n                             'align-right': align == 3}\">\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\">Stembevrijding gaat over het steeds vrijer gebruiken van je stem, steeds vrijer zingen. Niet om een lied zo perfect mogelijk uit te voeren, maar om te zingen wat er in je leeft. Moeiteloos. <br><br>Je laat je eigen muziek klinken, jouw eigen lied. Dat is niet ingewikkeld. Dat is eigenlijk heel eenvoudig, want niemand kan dat lied beter zingen dan jezelf. Alles wat in je leeft kan en wil bezongen worden! Zingen is daarmee een prachtige ingang naar binnen, naar verbinding met jezelf en de wereld om je heen. \n<br>Natuurlijk kun je daarin ook ongemak of frustratie tegenkomen. En ook dat kun je voluit bezingen. Dat is lekker om te doen, spannend op z’n tijd, versterkt je kracht en zelfvertrouwen én het geeft bovenal ruimte in je stem.\n<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rTBBXioCRg",
+          "_anchor": "article3-d",
+          "_sourceTheme": "sportamp",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
           "_params": {}
         },
         {
@@ -1325,7 +1325,7 @@
             }
           },
           "_name": "features1",
-          "_customHTML": "<section class=\"features1\" group=\"Features\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"checkbox\" title=\"Row/Column\" name=\"flexDirection\" checked>\n    <header>Title</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Cards</header>\n    <input type=\"range\" inline title=\"Count\" name=\"cardsCount\" min=\"1\" max=\"4\" step=\"1\" value=\"2\" condition=\"showCardsTitle || showCardsSubtitle || showCardsText || showCardsButtons || checkIcons\">\n    <select title=\"Align\" name=\"cardsAlign\" condition=\"showCardsTitle || showCardsSubtitle || showCardsText || showCardsButtons || checkIcons\">\n        <option value=\"1\" selected>Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <!-- -->   \n    <input type=\"checkbox\" title=\"Show Title\" name=\"showCardsTitle\">\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showCardsSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Show Text\" name=\"showCardsText\" checked>\n    <input type=\"checkbox\" title=\"Show Buttons\" name=\"showCardsButtons\" checked>\n    <!--  -->\n    <input type=\"checkbox\" title=\"Borders\" name=\"showBorders\" condition=\"showCardsTitle || showCardsSubtitle || showCardsText || showCardsButtons || checkIcons\">\n    <input type=\"color\" title=\"Color\" name=\"bordersColor\" value=\"#cccccc\" condition=\"showBorders && (showCardsTitle || showCardsSubtitle || showCardsText || showCardsButtons || checkIcons)\">\n    <input type=\"checkbox\" title=\"Transparent BG\" name=\"transparentBg\" condition=\"showCardsTitle || showCardsSubtitle || showCardsText || showCardsButtons || checkIcons\">\n    <input type=\"range\" title=\"Opacity\" name=\"bgOpacity\" min=\"0\" max=\"1\" value=\"1\" step=\"0.1\" condition=\"!transparentBg\">\n\n    <input type=\"color\" title=\"Color\" name=\"cardBg\" value=\"#81aa97\" condition=\"!transparentBg && (showCardsTitle || showCardsSubtitle || showCardsText || showCardsButtons || checkIcons)\">\n    <!--  -->\n    <input type=\"checkbox\" title=\"Icons\" name=\"checkIcons\">    \n    <input type=\"range\" inline title=\"Icons Size\" name=\"iconsSize\" min=\"1\" max=\"8\" step=\"0.5\" value=\"2.5\" condition=\"checkIcons\">\n    <!--  -->\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background3-1.jpg\">\n    </fieldset>\n    <!--  -->\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"mbr-px-5\" mbr-class=\"{'container':!fullWidth,\n                     'container-fluid':fullWidth}\">\n        <div class=\"title-wrap mbr-pb-4\" mbr-if=\"showTitle || showSubtitle\" mbr-class=\"{'align-center': titleAlign == 2,\n                         'align-right': titleAlign == 3}\">\n            <h3 class=\"mbr-section-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Samen met anderen zingen?</h3>\n            <h4 class=\"mbr-section-subtitle mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Met anderen zingen geeft herkenning, verbinding én plezier.</h4>\n        </div>\n        <div class=\"mbr-row\" mbr-class=\"{'mbr-jc-c': cardsCount <= 3, \n                         'mbr-column': !flexDirection}\" mbr-if=\"showCardsTitle || showCardsSubtitle || showCardsText || showCardsButtons || checkIcons\">\n            <div class=\"card mbr-col-sm-12\" mbr-class=\"{'mbr-col-md-12': flexDirection &amp;&amp; cardsCount == 1,\n                             'mbr-col-md-6 mbr-col-lg-6': flexDirection &amp;&amp; cardsCount == 2,\n                             'mbr-col-md-8 mbr-col-lg-4': flexDirection &amp;&amp; cardsCount == 3,\n                             'mbr-col-md-6 mbr-col-lg-3': flexDirection &amp;&amp; cardsCount == 4,\n                             'align-center': cardsAlign == 2,\n                             'align-right': cardsAlign == 3,\n                             'md-pb': (flexDirection &amp;&amp; cardsCount > 2) || (!flexDirection &amp;&amp; cardsCount > 1),\n                             'lg-pb': !flexDirection &amp;&amp; cardsCount > 1,\n                             'last-child': cardsCount == 1}\">\n                <div class=\"card-wrapper mbr-flex\" mbr-class=\"{'mbr-column': checkIcons && flexDirection, \n                                 'mbr-pt-3 mbr-pb-3 mbr-px-4': showBorders || !transparentBg}\">\n                    <div class=\"card-img\" mbr-if=\"checkIcons\" mbr-class=\"{'align-center': cardsAlign == 2,\n                                     'align-right': cardsAlign == 3, \n                                     'mbr-pb-3': flexDirection}\">\n                        <div class=\"iconfont-wrapper\">\n                            <span mbr-icon class=\"amp-iconfont fa-heart fa\"></span>\n                        </div>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"(showCardsTitle || showCardsSubtitle || showCardsText || showCardsButtons)\">\n                        <h3 class=\"card-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardsTitle\" data-app-selector=\".card-title\">Workshop - 12 deelnemers</h3>\n                        <h4 class=\"card-subtitle mbr-pt-3 mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsSubtitle\" data-app-selector=\".card-subtitle\">Ik Zing?!</h4>\n                        <p class=\"card-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsText\" data-app-selector=\".card-text\">Samen met anderen dompel je je onder in een dag stembevrijding. Een ontdekkingstocht naar jouw moeiteloze geluid en de vreugde van het zingen.<br><br>Begeleiding: Petra Welboren en Ton van Wolde<br>Wanneer: 26 mei 2024<br>Waar: Rederijkerstraat 6, 5663 EB, Geldrop<br>Kosten: € 95,- early bird, aanmelden voor 20 mei. Daarna € 105,-<br><br><br></p>\n                        <div class=\"card-btn mbr-section-btn mbr-pt-2\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsButtons\"><a class=\"btn btn-lg btn-white-outline\" href=\"page9.html\" data-app-placeholder=\"Type Text\">lees verder</a></div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card mbr-col-sm-12\" mbr-class=\"{'mbr-col-md-6 mbr-col-lg-6': flexDirection &amp;&amp; cardsCount == 2,\n                             'mbr-col-md-8 mbr-col-lg-4': flexDirection &amp;&amp; cardsCount == 3,\n                             'mbr-col-md-6 mbr-col-lg-3': flexDirection &amp;&amp; cardsCount == 4,\n                             'align-center': cardsAlign == 2,\n                             'align-right': cardsAlign == 3,\n                             'md-pb': (flexDirection &amp;&amp; cardsCount > 2) || (!flexDirection &amp;&amp; cardsCount > 2),\n                             'lg-pb': !flexDirection &amp;&amp; cardsCount > 2,\n                             'last-child': cardsCount == 2}\" mbr-if=\"cardsCount > 1\">\n                <div class=\"card-wrapper mbr-flex\" mbr-class=\"{'mbr-column': checkIcons && flexDirection,\n                                 'mbr-pt-3 mbr-pb-3 mbr-px-4': showBorders || !transparentBg}\">\n                    <div class=\"card-img\" mbr-if=\"checkIcons\" mbr-class=\"{'align-center': cardsAlign == 2,\n                                     'align-right': cardsAlign == 3, \n                                     'mbr-pb-3': flexDirection}\">\n                        <div class=\"iconfont-wrapper\">\n                            <span mbr-icon class=\"amp-iconfont fa-group fa\"></span>\n                        </div>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"(showCardsTitle || showCardsSubtitle || showCardsText || showCardsButtons)\">\n                        <h3 class=\"card-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardsTitle\" data-app-selector=\".card-title\">Samen zingen</h3>\n                        <h4 class=\"card-subtitle mbr-pt-3 mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsSubtitle\" data-app-selector=\".card-subtitle\">ZangCirkel<br></h4>\n                        <p class=\"card-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsText\" data-app-selector=\".card-text\">Een avond om lekker samen te zingen, ontspannen, laagdrempelig en vol levendigheid. We zingen oude en nieuwe mantra's. Zing je mee?<br><br>Begeleiding: Petra Welboren en Ton van Wolde<br>Wanneer: 22 mei 2024, 19:30 - 21:30<br>Waar: Agnus Dei-Kerk, Koningin Julianalaan 12, 5582 JV Waalre<br>Kosten: € 15, opgeven gaat via Hipsy, klik hieronder!<br><br><br></p>\n                        <div class=\"card-btn mbr-section-btn mbr-pt-2\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsButtons\"><a class=\"btn btn-lg btn-white-outline\" href=\"https://hipsy.nl/event/55462-zangcirkel-waalre\" data-app-placeholder=\"Type Text\" target=\"_blank\">Ik zing mee</a></div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card mbr-col-sm-12\" mbr-class=\"{'mbr-col-md-8 mbr-col-lg-4': flexDirection &amp;&amp; cardsCount == 3,\n                             'mbr-col-md-6 mbr-col-lg-3': flexDirection &amp;&amp; cardsCount == 4,\n                             'align-center': cardsAlign == 2,\n                             'align-right': cardsAlign == 3,\n                             'md-pb': !flexDirection &amp;&amp; cardsCount > 3,\n                             'lg-pb': !flexDirection &amp;&amp; cardsCount > 3,\n                             'last-child': cardsCount == 3}\" mbr-if=\"cardsCount > 2\">\n                <div class=\"card-wrapper mbr-flex\" mbr-class=\"{'mbr-column': checkIcons && flexDirection,\n                                 'mbr-pt-3 mbr-pb-3 mbr-px-4': showBorders || !transparentBg}\">\n                    <div class=\"card-img\" mbr-if=\"checkIcons\" mbr-class=\"{'align-center': cardsAlign == 2,\n                                     'align-right': cardsAlign == 3, \n                                     'mbr-pb-3': flexDirection}\">\n                        <div class=\"iconfont-wrapper\">\n                            <span mbr-icon class=\"amp-iconfont fa-group fa\"></span>\n                        </div>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"(showCardsTitle || showCardsSubtitle || showCardsText || showCardsButtons)\">\n                        <h3 class=\"card-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardsTitle\" data-app-selector=\".card-title\">Samen zingen</h3>\n                        <h4 class=\"card-subtitle mbr-pt-3 mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsSubtitle\" data-app-selector=\".card-subtitle\">Zing!</h4>\n                        <p class=\"card-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsText\" data-app-selector=\".card-text\">Een reeks van 4 avonden stembevrijding met de volgende ingrediënten: aandacht voor je eigen stem, improviserend zingen, mantra’s zingen en veel ruimte om samen te zingen<br><br>Wanneer: nieuwe data in het voorjaar,&nbsp;19:30 - 21:30<br>Locatie: Rederijkerstraat 6, 5663 EB, Geldrop<br><br><br><br><br></p>\n                        <div class=\"card-btn mbr-section-btn mbr-pt-2\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsButtons\"><a class=\"btn btn-lg btn-white-outline\" href=\"page13.html\" data-app-placeholder=\"Type Text\">Lees meer</a></div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card mbr-col-sm-12\" mbr-class=\"{'mbr-col-md-6 mbr-col-lg-3': flexDirection,\n                             'align-center': cardsAlign == 2,\n                             'align-right': cardsAlign == 3,\n                             'last-child': cardsCount == 4}\" mbr-if=\"cardsCount > 3\">\n                <div class=\"card-wrapper mbr-flex\" mbr-class=\"{'mbr-column': checkIcons && flexDirection, \n                                 'mbr-pt-3 mbr-pb-3 mbr-px-4': showBorders || !transparentBg}\">\n                    <div class=\"card-img\" mbr-if=\"checkIcons\" mbr-class=\"{'align-center': cardsAlign == 2,\n                                     'align-right': cardsAlign == 3, \n                                     'mbr-pb-3': flexDirection}\">\n                        <div class=\"iconfont-wrapper\">\n                            <span mbr-icon class=\"amp-iconfont fa-child fa\"></span>\n                        </div>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"(showCardsTitle || showCardsSubtitle || showCardsText || showCardsButtons)\">\n                        <h3 class=\"card-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardsTitle\" data-app-selector=\".card-title\">4 dagen</h3>\n                        <h4 class=\"card-subtitle mbr-pt-3 mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsSubtitle\" data-app-selector=\".card-subtitle\">Liefde, Lol en Levenslust</h4>\n                        <p class=\"card-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsText\" data-app-selector=\".card-text\">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dol</p>\n                        <div class=\"card-btn mbr-section-btn mbr-pt-2\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsButtons\">\n                            <a class=\"btn btn-lg btn-primary-outline\" href=\"https://mobirise.com\">Read More</a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"features1\" group=\"Features\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"checkbox\" title=\"Row/Column\" name=\"flexDirection\" checked>\n    <header>Title</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Cards</header>\n    <input type=\"range\" inline title=\"Count\" name=\"cardsCount\" min=\"1\" max=\"4\" step=\"1\" value=\"2\" condition=\"showCardsTitle || showCardsSubtitle || showCardsText || showCardsButtons || checkIcons\">\n    <select title=\"Align\" name=\"cardsAlign\" condition=\"showCardsTitle || showCardsSubtitle || showCardsText || showCardsButtons || checkIcons\">\n        <option value=\"1\" selected>Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <!-- -->   \n    <input type=\"checkbox\" title=\"Show Title\" name=\"showCardsTitle\">\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showCardsSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Show Text\" name=\"showCardsText\" checked>\n    <input type=\"checkbox\" title=\"Show Buttons\" name=\"showCardsButtons\" checked>\n    <!--  -->\n    <input type=\"checkbox\" title=\"Borders\" name=\"showBorders\" condition=\"showCardsTitle || showCardsSubtitle || showCardsText || showCardsButtons || checkIcons\">\n    <input type=\"color\" title=\"Color\" name=\"bordersColor\" value=\"#cccccc\" condition=\"showBorders && (showCardsTitle || showCardsSubtitle || showCardsText || showCardsButtons || checkIcons)\">\n    <input type=\"checkbox\" title=\"Transparent BG\" name=\"transparentBg\" condition=\"showCardsTitle || showCardsSubtitle || showCardsText || showCardsButtons || checkIcons\">\n    <input type=\"range\" title=\"Opacity\" name=\"bgOpacity\" min=\"0\" max=\"1\" value=\"1\" step=\"0.1\" condition=\"!transparentBg\">\n\n    <input type=\"color\" title=\"Color\" name=\"cardBg\" value=\"#81aa97\" condition=\"!transparentBg && (showCardsTitle || showCardsSubtitle || showCardsText || showCardsButtons || checkIcons)\">\n    <!--  -->\n    <input type=\"checkbox\" title=\"Icons\" name=\"checkIcons\">    \n    <input type=\"range\" inline title=\"Icons Size\" name=\"iconsSize\" min=\"1\" max=\"8\" step=\"0.5\" value=\"2.5\" condition=\"checkIcons\">\n    <!--  -->\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background3-1.jpg\">\n    </fieldset>\n    <!--  -->\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"mbr-px-5\" mbr-class=\"{'container':!fullWidth,\n                     'container-fluid':fullWidth}\">\n        <div class=\"title-wrap mbr-pb-4\" mbr-if=\"showTitle || showSubtitle\" mbr-class=\"{'align-center': titleAlign == 2,\n                         'align-right': titleAlign == 3}\">\n            <h3 class=\"mbr-section-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Samen met anderen zingen?</h3>\n            <h4 class=\"mbr-section-subtitle mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Met anderen zingen geeft herkenning, verbinding én plezier.</h4>\n        </div>\n        <div class=\"mbr-row\" mbr-class=\"{'mbr-jc-c': cardsCount <= 3, \n                         'mbr-column': !flexDirection}\" mbr-if=\"showCardsTitle || showCardsSubtitle || showCardsText || showCardsButtons || checkIcons\">\n            <div class=\"card mbr-col-sm-12\" mbr-class=\"{'mbr-col-md-12': flexDirection &amp;&amp; cardsCount == 1,\n                             'mbr-col-md-6 mbr-col-lg-6': flexDirection &amp;&amp; cardsCount == 2,\n                             'mbr-col-md-8 mbr-col-lg-4': flexDirection &amp;&amp; cardsCount == 3,\n                             'mbr-col-md-6 mbr-col-lg-3': flexDirection &amp;&amp; cardsCount == 4,\n                             'align-center': cardsAlign == 2,\n                             'align-right': cardsAlign == 3,\n                             'md-pb': (flexDirection &amp;&amp; cardsCount > 2) || (!flexDirection &amp;&amp; cardsCount > 1),\n                             'lg-pb': !flexDirection &amp;&amp; cardsCount > 1,\n                             'last-child': cardsCount == 1}\">\n                <div class=\"card-wrapper mbr-flex\" mbr-class=\"{'mbr-column': checkIcons && flexDirection, \n                                 'mbr-pt-3 mbr-pb-3 mbr-px-4': showBorders || !transparentBg}\">\n                    <div class=\"card-img\" mbr-if=\"checkIcons\" mbr-class=\"{'align-center': cardsAlign == 2,\n                                     'align-right': cardsAlign == 3, \n                                     'mbr-pb-3': flexDirection}\">\n                        <div class=\"iconfont-wrapper\">\n                            <span mbr-icon class=\"amp-iconfont fa-heart fa\"></span>\n                        </div>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"(showCardsTitle || showCardsSubtitle || showCardsText || showCardsButtons)\">\n                        <h3 class=\"card-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardsTitle\" data-app-selector=\".card-title\">Workshop - 12 deelnemers</h3>\n                        <h4 class=\"card-subtitle mbr-pt-3 mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsSubtitle\" data-app-selector=\".card-subtitle\">Ik Zing?!</h4>\n                        <p class=\"card-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsText\" data-app-selector=\".card-text\">Samen met anderen dompel je je onder in een dag stembevrijding. Een ontdekkingstocht naar jouw moeiteloze geluid en de vreugde van het zingen.<br><br>Begeleiding: Petra Welboren en Ton van Wolde<br>Wanneer: 26 mei 2024<br>Waar: Rederijkerstraat 6, 5663 EB, Geldrop<br>Kosten: € 95,-&nbsp;<br><br><br><br></p>\n                        <div class=\"card-btn mbr-section-btn mbr-pt-2\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsButtons\"><a class=\"btn btn-lg btn-white-outline\" href=\"page9.html\" data-app-placeholder=\"Type Text\">lees verder</a></div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card mbr-col-sm-12\" mbr-class=\"{'mbr-col-md-6 mbr-col-lg-6': flexDirection &amp;&amp; cardsCount == 2,\n                             'mbr-col-md-8 mbr-col-lg-4': flexDirection &amp;&amp; cardsCount == 3,\n                             'mbr-col-md-6 mbr-col-lg-3': flexDirection &amp;&amp; cardsCount == 4,\n                             'align-center': cardsAlign == 2,\n                             'align-right': cardsAlign == 3,\n                             'md-pb': (flexDirection &amp;&amp; cardsCount > 2) || (!flexDirection &amp;&amp; cardsCount > 2),\n                             'lg-pb': !flexDirection &amp;&amp; cardsCount > 2,\n                             'last-child': cardsCount == 2}\" mbr-if=\"cardsCount > 1\">\n                <div class=\"card-wrapper mbr-flex\" mbr-class=\"{'mbr-column': checkIcons && flexDirection,\n                                 'mbr-pt-3 mbr-pb-3 mbr-px-4': showBorders || !transparentBg}\">\n                    <div class=\"card-img\" mbr-if=\"checkIcons\" mbr-class=\"{'align-center': cardsAlign == 2,\n                                     'align-right': cardsAlign == 3, \n                                     'mbr-pb-3': flexDirection}\">\n                        <div class=\"iconfont-wrapper\">\n                            <span mbr-icon class=\"amp-iconfont fa-group fa\"></span>\n                        </div>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"(showCardsTitle || showCardsSubtitle || showCardsText || showCardsButtons)\">\n                        <h3 class=\"card-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardsTitle\" data-app-selector=\".card-title\">Samen zingen</h3>\n                        <h4 class=\"card-subtitle mbr-pt-3 mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsSubtitle\" data-app-selector=\".card-subtitle\">ZangCirkel<br></h4>\n                        <p class=\"card-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsText\" data-app-selector=\".card-text\">Een avond om lekker samen te zingen, ontspannen, laagdrempelig en vol levendigheid. We zingen oude en nieuwe mantra's. Zing je mee?<br><br>Begeleiding: Petra Welboren en Ton van Wolde<br>Wanneer: 22 mei 2024, 19:30 - 21:30<br>Waar: Agnus Dei-Kerk, Koningin Julianalaan 12, 5582 JV Waalre<br>Kosten: € 15, opgeven gaat via Hipsy, klik hieronder!<br><br><br></p>\n                        <div class=\"card-btn mbr-section-btn mbr-pt-2\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsButtons\"><a class=\"btn btn-lg btn-white-outline\" href=\"https://hipsy.nl/event/55462-zangcirkel-waalre\" data-app-placeholder=\"Type Text\" target=\"_blank\">Ik zing mee</a></div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card mbr-col-sm-12\" mbr-class=\"{'mbr-col-md-8 mbr-col-lg-4': flexDirection &amp;&amp; cardsCount == 3,\n                             'mbr-col-md-6 mbr-col-lg-3': flexDirection &amp;&amp; cardsCount == 4,\n                             'align-center': cardsAlign == 2,\n                             'align-right': cardsAlign == 3,\n                             'md-pb': !flexDirection &amp;&amp; cardsCount > 3,\n                             'lg-pb': !flexDirection &amp;&amp; cardsCount > 3,\n                             'last-child': cardsCount == 3}\" mbr-if=\"cardsCount > 2\">\n                <div class=\"card-wrapper mbr-flex\" mbr-class=\"{'mbr-column': checkIcons && flexDirection,\n                                 'mbr-pt-3 mbr-pb-3 mbr-px-4': showBorders || !transparentBg}\">\n                    <div class=\"card-img\" mbr-if=\"checkIcons\" mbr-class=\"{'align-center': cardsAlign == 2,\n                                     'align-right': cardsAlign == 3, \n                                     'mbr-pb-3': flexDirection}\">\n                        <div class=\"iconfont-wrapper\">\n                            <span mbr-icon class=\"amp-iconfont fa-group fa\"></span>\n                        </div>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"(showCardsTitle || showCardsSubtitle || showCardsText || showCardsButtons)\">\n                        <h3 class=\"card-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardsTitle\" data-app-selector=\".card-title\">Samen zingen</h3>\n                        <h4 class=\"card-subtitle mbr-pt-3 mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsSubtitle\" data-app-selector=\".card-subtitle\">Zing!</h4>\n                        <p class=\"card-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsText\" data-app-selector=\".card-text\">Een reeks van 4 avonden stembevrijding met de volgende ingrediënten: aandacht voor je eigen stem, improviserend zingen, mantra’s zingen en veel ruimte om samen te zingen<br><br>Wanneer: nieuwe data in het voorjaar,&nbsp;19:30 - 21:30<br>Locatie: Rederijkerstraat 6, 5663 EB, Geldrop<br><br><br><br><br></p>\n                        <div class=\"card-btn mbr-section-btn mbr-pt-2\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-theme-style=\"display-4\" mbr-if=\"showCardsButtons\"><a class=\"btn btn-lg btn-white-outline\" href=\"page13.html\" data-app-placeholder=\"Type Text\">Lees meer</a></div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card mbr-col-sm-12\" mbr-class=\"{'mbr-col-md-6 mbr-col-lg-3': flexDirection,\n                             'align-center': cardsAlign == 2,\n                             'align-right': cardsAlign == 3,\n                             'last-child': cardsCount == 4}\" mbr-if=\"cardsCount > 3\">\n                <div class=\"card-wrapper mbr-flex\" mbr-class=\"{'mbr-column': checkIcons && flexDirection, \n                                 'mbr-pt-3 mbr-pb-3 mbr-px-4': showBorders || !transparentBg}\">\n                    <div class=\"card-img\" mbr-if=\"checkIcons\" mbr-class=\"{'align-center': cardsAlign == 2,\n                                     'align-right': cardsAlign == 3, \n                                     'mbr-pb-3': flexDirection}\">\n                        <div class=\"iconfont-wrapper\">\n                            <span mbr-icon class=\"amp-iconfont fa-child fa\"></span>\n                        </div>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"(showCardsTitle || showCardsSubtitle || showCardsText || showCardsButtons)\">\n                        <h3 class=\"card-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardsTitle\" data-app-selector=\".card-title\">4 dagen</h3>\n                        <h4 class=\"card-subtitle mbr-pt-3 mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsSubtitle\" data-app-selector=\".card-subtitle\">Liefde, Lol en Levenslust</h4>\n                        <p class=\"card-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsText\" data-app-selector=\".card-text\">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dol</p>\n                        <div class=\"card-btn mbr-section-btn mbr-pt-2\" mbr-buttons data-toolbar=\"-mbrBtnMove\" mbr-theme-style=\"display-7\" mbr-if=\"showCardsButtons\">\n                            <a class=\"btn btn-lg btn-primary-outline\" href=\"https://mobirise.com\">Read More</a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "features1-2h",
           "_isUserblock": true,
           "_sourceTheme": "sportamp",
@@ -1547,74 +1547,6 @@
         {
           "alias": false,
           "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              ".mbr-overlay": {
-                "background-color": "@overlayColor",
-                "opacity": "@overlayOpacity"
-              }
-            },
-            "@media (max-width: 768px)": {
-              ".title-wrap": {
-                "padding-bottom": "2rem"
-              }
-            },
-            ".mbr-section-title": {
-              "color": "#81aa97"
-            }
-          },
-          "_name": "article1",
-          "_customHTML": "<section class=\"article1\" group=\"Article\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"title\" mbr-class=\"{'align-center':titleAlign==2,\n                         'align-right':titleAlign==3}\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\">Dansimprovisatie</span></h3>\n            <h4 class=\"mbr-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text\">Enter your article subtitle here</h4>\n        </div>\n    </div>\n</section>",
-          "_cid": "s7u5nTLi66",
-          "_anchor": "article1-v",
-          "_sourceTheme": "sportamp",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "background-color": "@bgColor",
-            ".image": {
-              "& when not (@rowReverse)": {
-                "@media (min-width: 992px)": {
-                  "padding-left": "1rem",
-                  "padding-right": "3rem"
-                }
-              },
-              "& when (@rowReverse)": {
-                "@media (min-width: 992px)": {
-                  "padding-left": "3rem",
-                  "padding-right": "1rem"
-                }
-              },
-              "@media (max-width: 991px)": {
-                "padding-bottom": "1rem"
-              }
-            }
-          },
-          "_name": "article3",
-          "_customHTML": "<section class=\"article3\" group=\"Articles\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n    <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"1\" max=\"5\" step=\"1\" value=\"3\">\n    <input type=\"checkbox\" name=\"rowReverse\" title=\"Reverse\">\n    <select title=\"Text Align\" name=\"align\">\n        <option value=\"1\" selected>Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <div class=\"container\">\n        <div class=\"mbr-row mbr-px-4\" mbr-class=\"{'mbr-row-reverse' : rowReverse}\">\n            <div class=\"image mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-3': mediaSize == 1,\n                             'mbr-col-lg-4': mediaSize==2,\n                             'mbr-col-lg-6': mediaSize==3,\n                             'mbr-col-lg-8': mediaSize==4,\n                             'mbr-col-lg-9': mediaSize==5}\">\n                <amp-img src=\"@PROJECT_PATH@/assets/images/vrouw-handen-in-de-lucht-948x633.jpg\" layout=\"responsive\" width=\"474\" height=\"316.5\" alt=\"image\" class=\"mobirise-loader\">\n                    <div placeholder class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/vrouw-handen-in-de-lucht-948x633.jpg\" alt title>\n                </amp-img>\n            </div>\n            <div class=\"text-wrap mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-3': mediaSize == 5,\n                             'mbr-col-lg-4': mediaSize==4,\n                             'mbr-col-lg-6': mediaSize==3,\n                             'mbr-col-lg-8': mediaSize==2,\n                             'mbr-col-lg-9': mediaSize==1,\n                             'align-center': align == 2,\n                             'align-right': align == 3}\">\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\">Hou je van dansen? Dansimprovisatie is voor iedereen die graag danst, z'n creativiteit wil gebruiken en zich vrij wil voelen op de dansvloer. Of je nu veel ervaring hebt of nog weinig. Bij improvisatie gaat het om je lijf lekker in beweging zetten, nieuwe bewegingen ontdekken en je eigen creativiteit aanspreken. Thema's en inspiratiemateriaal vormen de ingang. Of het nu kunst, foto's of een gedicht is, alles is inspiratie voor dans. Je wordt uitgedaagd om op een speelse manier in beweging te komen. Daarbij gaat het om de wisselwerking tussen beweging én de beleving van de danser. Zo zoek je al improviserend naar nieuwe bewegingen en vormen. Alleen en samen met andere dansers.&nbsp;<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "s7u5nUQLZs",
-          "_anchor": "article3-w",
-          "_sourceTheme": "sportamp",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
             "background-color": "@menuBgColor",
             "padding": "0",
             ".navbar": {
@@ -1716,6 +1648,74 @@
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".title-wrap": {
+                "padding-bottom": "2rem"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#81aa97"
+            }
+          },
+          "_name": "article1",
+          "_customHTML": "<section class=\"article1\" group=\"Article\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"title\" mbr-class=\"{'align-center':titleAlign==2,\n                         'align-right':titleAlign==3}\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\">Dansimprovisatie</span></h3>\n            <h4 class=\"mbr-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text\">Enter your article subtitle here</h4>\n        </div>\n    </div>\n</section>",
+          "_cid": "s7u5nTLi66",
+          "_anchor": "article1-v",
+          "_sourceTheme": "sportamp",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            ".image": {
+              "& when not (@rowReverse)": {
+                "@media (min-width: 992px)": {
+                  "padding-left": "1rem",
+                  "padding-right": "3rem"
+                }
+              },
+              "& when (@rowReverse)": {
+                "@media (min-width: 992px)": {
+                  "padding-left": "3rem",
+                  "padding-right": "1rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                "padding-bottom": "1rem"
+              }
+            }
+          },
+          "_name": "article3",
+          "_customHTML": "<section class=\"article3\" group=\"Articles\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n    <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"1\" max=\"5\" step=\"1\" value=\"3\">\n    <input type=\"checkbox\" name=\"rowReverse\" title=\"Reverse\">\n    <select title=\"Text Align\" name=\"align\">\n        <option value=\"1\" selected>Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <div class=\"container\">\n        <div class=\"mbr-row mbr-px-4\" mbr-class=\"{'mbr-row-reverse' : rowReverse}\">\n            <div class=\"image mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-3': mediaSize == 1,\n                             'mbr-col-lg-4': mediaSize==2,\n                             'mbr-col-lg-6': mediaSize==3,\n                             'mbr-col-lg-8': mediaSize==4,\n                             'mbr-col-lg-9': mediaSize==5}\">\n                <amp-img src=\"@PROJECT_PATH@/assets/images/vrouw-handen-in-de-lucht-948x633.jpg\" layout=\"responsive\" width=\"474\" height=\"316.5\" alt=\"image\" class=\"mobirise-loader\">\n                    <div placeholder class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/vrouw-handen-in-de-lucht-948x633.jpg\" alt title>\n                </amp-img>\n            </div>\n            <div class=\"text-wrap mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-3': mediaSize == 5,\n                             'mbr-col-lg-4': mediaSize==4,\n                             'mbr-col-lg-6': mediaSize==3,\n                             'mbr-col-lg-8': mediaSize==2,\n                             'mbr-col-lg-9': mediaSize==1,\n                             'align-center': align == 2,\n                             'align-right': align == 3}\">\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\">Hou je van dansen? Dansimprovisatie is voor iedereen die graag danst, z'n creativiteit wil gebruiken en zich vrij wil voelen op de dansvloer. Of je nu veel ervaring hebt of nog weinig. Bij improvisatie gaat het om je lijf lekker in beweging zetten, nieuwe bewegingen ontdekken en je eigen creativiteit aanspreken. Thema's en inspiratiemateriaal vormen de ingang. Of het nu kunst, foto's of een gedicht is, alles is inspiratie voor dans. Je wordt uitgedaagd om op een speelse manier in beweging te komen. Daarbij gaat het om de wisselwerking tussen beweging én de beleving van de danser. Zo zoek je al improviserend naar nieuwe bewegingen en vormen. Alleen en samen met andere dansers.&nbsp;<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "s7u5nUQLZs",
+          "_anchor": "article3-w",
+          "_sourceTheme": "sportamp",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
           "_params": {}
         },
         {
@@ -1914,43 +1914,6 @@
         {
           "alias": false,
           "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              ".mbr-overlay": {
-                "background-color": "@overlayColor",
-                "opacity": "@overlayOpacity"
-              }
-            },
-            "@media (max-width: 768px)": {
-              ".title-wrap": {
-                "padding-bottom": "2rem"
-              }
-            },
-            ".mbr-section-title": {
-              "color": "#e3aa0c"
-            },
-            ".mbr-text": {
-              "color": "#e3aa0c"
-            }
-          },
-          "_name": "article1",
-          "_customHTML": "<section class=\"article1\" group=\"Article\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"title\" mbr-class=\"{'align-center':titleAlign==2,\n                         'align-right':titleAlign==3}\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\">Open Up!</span></h3>\n            <h4 class=\"mbr-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text\">Jezelf zingend laten horen, is tegelijkertijd jezelf laten zien.&nbsp;</h4>\n        </div>\n    </div>\n</section>",
-          "_cid": "s8z84F6jKu",
-          "_anchor": "article1-19",
-          "_sourceTheme": "sportamp",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
             "background-color": "@menuBgColor",
             "padding": "0",
             ".navbar": {
@@ -2052,6 +2015,43 @@
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".title-wrap": {
+                "padding-bottom": "2rem"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#e3aa0c"
+            },
+            ".mbr-text": {
+              "color": "#e3aa0c"
+            }
+          },
+          "_name": "article1",
+          "_customHTML": "<section class=\"article1\" group=\"Article\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"title\" mbr-class=\"{'align-center':titleAlign==2,\n                         'align-right':titleAlign==3}\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\">Open Up!</span></h3>\n            <h4 class=\"mbr-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text\">Jezelf zingend laten horen, is tegelijkertijd jezelf laten zien.&nbsp;</h4>\n        </div>\n    </div>\n</section>",
+          "_cid": "s8z84F6jKu",
+          "_anchor": "article1-19",
+          "_sourceTheme": "sportamp",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
           "_params": {}
         },
         {
@@ -2223,40 +2223,6 @@
         {
           "alias": false,
           "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              ".mbr-overlay": {
-                "background-color": "@overlayColor",
-                "opacity": "@overlayOpacity"
-              }
-            },
-            "@media (max-width: 768px)": {
-              ".title-wrap": {
-                "padding-bottom": "2rem"
-              }
-            },
-            ".mbr-section-title": {
-              "color": "#e3aa0c"
-            }
-          },
-          "_name": "article1",
-          "_customHTML": "<section class=\"article1\" group=\"Article\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"title\" mbr-class=\"{'align-center':titleAlign==2,\n                         'align-right':titleAlign==3}\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\">Sing Your Song</span></h3>\n            <h4 class=\"mbr-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text\"><br><div><br></div></h4>\n        </div>\n    </div>\n</section>",
-          "_cid": "s8zbZAHarj",
-          "_anchor": "article1-1e",
-          "_sourceTheme": "sportamp",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
             "background-color": "@menuBgColor",
             "padding": "0",
             ".navbar": {
@@ -2358,6 +2324,40 @@
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".title-wrap": {
+                "padding-bottom": "2rem"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#e3aa0c"
+            }
+          },
+          "_name": "article1",
+          "_customHTML": "<section class=\"article1\" group=\"Article\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"title\" mbr-class=\"{'align-center':titleAlign==2,\n                         'align-right':titleAlign==3}\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\">Sing Your Song</span></h3>\n            <h4 class=\"mbr-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text\"><br><div><br></div></h4>\n        </div>\n    </div>\n</section>",
+          "_cid": "s8zbZAHarj",
+          "_anchor": "article1-1e",
+          "_sourceTheme": "sportamp",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
           "_params": {}
         },
         {
@@ -2610,40 +2610,6 @@
         {
           "alias": false,
           "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "background-color": "@bgColor",
-            ".image": {
-              "& when not (@rowReverse)": {
-                "@media (min-width: 992px)": {
-                  "padding-left": "1rem",
-                  "padding-right": "3rem"
-                }
-              },
-              "& when (@rowReverse)": {
-                "@media (min-width: 992px)": {
-                  "padding-left": "3rem",
-                  "padding-right": "1rem"
-                }
-              },
-              "@media (max-width: 991px)": {
-                "padding-bottom": "1rem"
-              }
-            }
-          },
-          "_name": "article3",
-          "_customHTML": "<section class=\"article3\" group=\"Articles\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n    <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"1\" max=\"5\" step=\"1\" value=\"3\">\n    <input type=\"checkbox\" name=\"rowReverse\" title=\"Reverse\">\n    <select title=\"Text Align\" name=\"align\">\n        <option value=\"1\" selected>Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <div class=\"container\">\n        <div class=\"mbr-row mbr-px-4\" mbr-class=\"{'mbr-row-reverse' : rowReverse}\">\n            <div class=\"image mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-3': mediaSize == 1,\n                             'mbr-col-lg-4': mediaSize==2,\n                             'mbr-col-lg-6': mediaSize==3,\n                             'mbr-col-lg-8': mediaSize==4,\n                             'mbr-col-lg-9': mediaSize==5}\">\n                <amp-img src=\"@PROJECT_PATH@/assets/images/2img-6640-948x1010.jpg\" layout=\"responsive\" width=\"474\" height=\"505\" alt=\"image\" class=\"mobirise-loader\">\n                    <div placeholder class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/2img-6640-948x1010.jpg\" alt title>\n                </amp-img>\n            </div>\n            <div class=\"text-wrap mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-3': mediaSize == 5,\n                             'mbr-col-lg-4': mediaSize==4,\n                             'mbr-col-lg-6': mediaSize==3,\n                             'mbr-col-lg-8': mediaSize==2,\n                             'mbr-col-lg-9': mediaSize==1,\n                             'align-center': align == 2,\n                             'align-right': align == 3}\">\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\">Mijn naam is Petra Welboren en ik werk als Stembevrijder en docent Dansimprovisatie. Ik heb jarenlang op diverse plekken en in verschillende rollen in de non-profit sector gewerkt. Dat doe ik nog steeds, maar ik ben me daarnaast meer en meer gaan richten op twee dingen die mij altijd al ongelooflijk veel plezier geven. Zingen en dansen. Het geeft me energie, plezier en brengt me in contact met mezelf. Ik heb gezongen in verschillende koren, volgde zangles en ben opgeleid tot Stembevrijder aan de Academie voor Stembevrijding (van Jan Kortie). Daarnaast heb ik veel gedanst met een voorliefde voor dansexpressie en improvisatie en heb ik de opleiding tot docent Dansexpressie (van Stichting Strooom) afgerond.<br><br><br><br><br><br><br><br><br>Foto: Marjolein Wilbrink</p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "s8zEXGCIxu",
-          "_anchor": "article3-1j",
-          "_sourceTheme": "sportamp",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
             "background-color": "@menuBgColor",
             "padding": "0",
             ".navbar": {
@@ -2745,6 +2711,40 @@
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            ".image": {
+              "& when not (@rowReverse)": {
+                "@media (min-width: 992px)": {
+                  "padding-left": "1rem",
+                  "padding-right": "3rem"
+                }
+              },
+              "& when (@rowReverse)": {
+                "@media (min-width: 992px)": {
+                  "padding-left": "3rem",
+                  "padding-right": "1rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                "padding-bottom": "1rem"
+              }
+            }
+          },
+          "_name": "article3",
+          "_customHTML": "<section class=\"article3\" group=\"Articles\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n    <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"1\" max=\"5\" step=\"1\" value=\"3\">\n    <input type=\"checkbox\" name=\"rowReverse\" title=\"Reverse\">\n    <select title=\"Text Align\" name=\"align\">\n        <option value=\"1\" selected>Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <div class=\"container\">\n        <div class=\"mbr-row mbr-px-4\" mbr-class=\"{'mbr-row-reverse' : rowReverse}\">\n            <div class=\"image mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-3': mediaSize == 1,\n                             'mbr-col-lg-4': mediaSize==2,\n                             'mbr-col-lg-6': mediaSize==3,\n                             'mbr-col-lg-8': mediaSize==4,\n                             'mbr-col-lg-9': mediaSize==5}\">\n                <amp-img src=\"@PROJECT_PATH@/assets/images/2img-6640-948x1010.jpg\" layout=\"responsive\" width=\"474\" height=\"505\" alt=\"image\" class=\"mobirise-loader\">\n                    <div placeholder class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/2img-6640-948x1010.jpg\" alt title>\n                </amp-img>\n            </div>\n            <div class=\"text-wrap mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-3': mediaSize == 5,\n                             'mbr-col-lg-4': mediaSize==4,\n                             'mbr-col-lg-6': mediaSize==3,\n                             'mbr-col-lg-8': mediaSize==2,\n                             'mbr-col-lg-9': mediaSize==1,\n                             'align-center': align == 2,\n                             'align-right': align == 3}\">\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\">Mijn naam is Petra Welboren en ik werk als Stembevrijder en docent Dansimprovisatie. Ik heb jarenlang op diverse plekken en in verschillende rollen in de non-profit sector gewerkt. Dat doe ik nog steeds, maar ik ben me daarnaast meer en meer gaan richten op twee dingen die mij altijd al ongelooflijk veel plezier geven. Zingen en dansen. Het geeft me energie, plezier en brengt me in contact met mezelf. Ik heb gezongen in verschillende koren, volgde zangles en ben opgeleid tot Stembevrijder aan de Academie voor Stembevrijding (van Jan Kortie). Daarnaast heb ik veel gedanst met een voorliefde voor dansexpressie en improvisatie en heb ik de opleiding tot docent Dansexpressie (van Stichting Strooom) afgerond.<br><br><br><br><br><br><br><br><br>Foto: Marjolein Wilbrink</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "s8zEXGCIxu",
+          "_anchor": "article3-1j",
+          "_sourceTheme": "sportamp",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
           "_params": {}
         },
         {
@@ -3162,43 +3162,6 @@
         {
           "alias": false,
           "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              ".mbr-overlay": {
-                "background-color": "@overlayColor",
-                "opacity": "@overlayOpacity"
-              }
-            },
-            "@media (max-width: 768px)": {
-              ".title-wrap": {
-                "padding-bottom": "2rem"
-              }
-            },
-            ".mbr-section-title": {
-              "color": "#81aa97"
-            },
-            ".mbr-text": {
-              "color": "#81aa97"
-            }
-          },
-          "_name": "article1",
-          "_customHTML": "<section class=\"article1\" group=\"Article\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"title\" mbr-class=\"{'align-center':titleAlign==2,\n                         'align-right':titleAlign==3}\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\">liefde, lol en levenslust</span></h3>\n            <h4 class=\"mbr-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text\">Meer ruimte voor jouw lied, meer ruimte voor jou!</h4>\n        </div>\n    </div>\n</section>",
-          "_cid": "sbdGz9QUsQ",
-          "_anchor": "article1-28",
-          "_sourceTheme": "sportamp",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
             "background-color": "@menuBgColor",
             "padding": "0",
             ".navbar": {
@@ -3300,6 +3263,43 @@
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".title-wrap": {
+                "padding-bottom": "2rem"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#81aa97"
+            },
+            ".mbr-text": {
+              "color": "#81aa97"
+            }
+          },
+          "_name": "article1",
+          "_customHTML": "<section class=\"article1\" group=\"Article\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"title\" mbr-class=\"{'align-center':titleAlign==2,\n                         'align-right':titleAlign==3}\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\">liefde, lol en levenslust</span></h3>\n            <h4 class=\"mbr-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text\">Meer ruimte voor jouw lied, meer ruimte voor jou!</h4>\n        </div>\n    </div>\n</section>",
+          "_cid": "sbdGz9QUsQ",
+          "_anchor": "article1-28",
+          "_sourceTheme": "sportamp",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
           "_params": {}
         },
         {
@@ -3474,43 +3474,6 @@
         {
           "alias": false,
           "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              ".mbr-overlay": {
-                "background-color": "@overlayColor",
-                "opacity": "@overlayOpacity"
-              }
-            },
-            "@media (max-width: 768px)": {
-              ".title-wrap": {
-                "padding-bottom": "2rem"
-              }
-            },
-            ".mbr-section-title": {
-              "color": "#81aa97"
-            },
-            ".mbr-text": {
-              "color": "#81aa97"
-            }
-          },
-          "_name": "article1",
-          "_customHTML": "<section class=\"article1\" group=\"Article\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"title\" mbr-class=\"{'align-center':titleAlign==2,\n                         'align-right':titleAlign==3}\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\">ik zing?!</span></h3>\n            <h4 class=\"mbr-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text\">Dompel je onder in een dag stembevrijding<br><div><br></div></h4>\n        </div>\n    </div>\n</section>",
-          "_cid": "sc4Y3EVaQU",
-          "_anchor": "article1-2i",
-          "_sourceTheme": "sportamp",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
             "background-color": "@menuBgColor",
             "padding": "0",
             ".navbar": {
@@ -3617,6 +3580,43 @@
         {
           "alias": false,
           "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".title-wrap": {
+                "padding-bottom": "2rem"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#81aa97"
+            },
+            ".mbr-text": {
+              "color": "#81aa97"
+            }
+          },
+          "_name": "article1",
+          "_customHTML": "<section class=\"article1\" group=\"Article\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"title\" mbr-class=\"{'align-center':titleAlign==2,\n                         'align-right':titleAlign==3}\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\">ik zing?!</span></h3>\n            <h4 class=\"mbr-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text\">Dompel je onder in een dag stembevrijding<br><div><br></div></h4>\n        </div>\n    </div>\n</section>",
+          "_cid": "sc4Y3EVaQU",
+          "_anchor": "article1-2i",
+          "_sourceTheme": "sportamp",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
             "& when not (@fullScreen)": {
               "padding-top": "(@paddingTop * 1rem)",
               "padding-bottom": "(@paddingBottom * 1rem)"
@@ -3664,7 +3664,7 @@
             }
           },
           "_name": "features2",
-          "_customHTML": "<section class=\"features2\" group=\"Features\" mbr-class=\"{'mbr-fullscreen': fullScreen}\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Row/Column\" name=\"blockDirection\">\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"checkbox\" title=\"Reverse Content\" name=\"reverseContent\" condition=\"!blockDirection\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Left/Right\" name=\"columnWidth\" min=\"1\" max=\"5\" step=\"1\" value=\"4\" condition=\"!blockDirection\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <!--  -->\n    <header condition=\"showTitle || showSubtitle || showText || showButtons\">Align</header>\n    <select title=\"All\" name=\"alignTitle\" condition=\"(showTitle || showSubtitle || showText || showButtons) && blockDirection\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <select title=\"Text\" name=\"alignContent\" condition=\"(showTitle || showSubtitle || showText || showButtons) && !blockDirection\">\n        <option value=\"1\" selected>Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header condition=\"blockDirection\">Content</header>\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"1\" max=\"6\" step=\"1\" value=\"3\" condition=\"blockDirection\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/mbr-2-1920x1275.jpeg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#81aa97\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class mbr-class=\"{'container':!fullWidth,\n                     'container-fluid': fullWidth}\">\n        <div class=\"mbr-row mbr-px-2 mbr-black\" mbr-class=\"{'mbr-row-reverse': reverseContent}\">\n            <div class=\"title-wrap mbr-col-md-12 mbr-col-sm-12\" mbr-class=\"{'mbr-col-lg-3':columnWidth==1 && !blockDirection,\n                             'mbr-col-lg-4':columnWidth==2 && !blockDirection,\n                             'mbr-col-lg-6':columnWidth==3 && !blockDirection,\n                             'mbr-col-lg-8':columnWidth==4 && !blockDirection,\n                             'mbr-col-lg-9':columnWidth==5 && !blockDirection,\n                             'mbr-col-lg-12':blockDirection,\n                             'align-left':(alignTitle==1 && blockDirection) || (alignContent==1 && !blockDirection),\n                             'align-center':(alignTitle==2 && blockDirection) || (alignContent==2 && !blockDirection),\n                             'align-right':(alignTitle==3 && blockDirection) || (alignContent==3 && !blockDirection),\n                             'mbr-pb-4': blockDirection,\n                             'mbr-flex': !blockDirection}\" mbr-if=\"showTitle || showSubtitle || showText || showButtons\">\n                <div class=\"title-block mbr-col-sm-12 mbr-col-md-12\">\n                    <h1 class=\"mbr-section-title mbr-fonts-style mbr-bold\" mbr-class=\"{'mbr-pb-3': showSubtitle || showText}\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .mbr-section-btn\">REACH YOUR\n<div>GOALS WITH US</div></h1>\n                    <h2 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-class=\"{'mbr-pb-2':showText}\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\"></h2>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-section-btn, .mbr-text\"></p><p>Deze dag staat jouw stem centraal. <br>Iedereen kan zingen, ook al voelen we soms schroom of terughoudendheid om onze stem te laten horen. We hebben maar al te snel een oordeel over hoe we zingen. <br>Hoe zou het zijn als je met open oren kan luisteren naar jouw eigen klank en je laat verrassen door jouw eigen muziek? Welke muziek wil zich nu laten horen? Wat dient zich aan? Dat is waar stembevrijding over gaat: zingen wat er in je leeft. En dat levert prachtige muziek op!\n<br><br>Deze workshop Stembevrijding is voor mensen die graag (willen) zingen, maar niet durven, denken dat ze niet kunnen zingen, of zich juist meer voluit willen laten horen. De dag bestaat o.a. uit lichaamswerk, klank- en improvisatie-oefeningen om jouw moeiteloze geluid steeds meer naar buiten te brengen. Daarin kan niets fout gaan, want het gaat er juist om dat je naar buiten brengt wat er in je leeft. En uiteraard wordt er ook samen gezongen.<br><br>Begeleiding: Petra Welboren en Ton van Wolde<br>Datum: 26 mei 2024<br>Locatie: Geldrops Kwartier, Rederijkerstraat 6, 5663 EB Geldrop<br>Tijd: 10:00 - 16:30<br>Aantal deelnemers: 12<br>Kosten: € 105,-, inclusief koffie, thee en lekkers<br>Early bird tot 20 mei: € 95,-</p><p></p>\n                    <div mbr-buttons class=\"mbr-section-btn\" mbr-class=\"{'mbr-pt-4':showSubtitle||showTitle||showText}\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\" mbr-if=\"showButtons\"><a class=\"btn btn-white-outline\" data-app-placeholder=\"Type Text\" href=\"page7.html\">ik wil graag meer weten&nbsp;</a></div>\n                </div>\n            </div>\n            <div class=\"image-wrap mbr-col-md-12 mbr-col-sm-12\" mbr-class=\"{'mbr-col-lg-3':columnWidth==5 && !blockDirection,\n                             'mbr-col-lg-4':columnWidth==4 && !blockDirection,\n                             'mbr-col-lg-6':columnWidth==3 && !blockDirection,\n                             'mbr-col-lg-8':columnWidth==2 && !blockDirection,\n                             'mbr-col-lg-9':columnWidth==1 && !blockDirection,\n                             'mbr-col-lg-12':blockDirection,\n                             'mbr-flex':!blockDirection}\">\n                <div class=\"image-block mbr-col-md-12 mbr-col-sm-12\" mbr-class=\"{'mbr-col-lg-3':contentWidth==1 && blockDirection,\n                                 'mbr-col-lg-4':contentWidth==2 && blockDirection,\n                                 'mbr-col-lg-6':contentWidth==3 && blockDirection,\n                                 'mbr-col-lg-8':contentWidth==4 && blockDirection,\n                                 'mbr-col-lg-9':contentWidth==5 && blockDirection,\n                                 'mbr-mr-auto':alignTitle==1,\n                                 'mbr-m-auto':alignTitle==2,\n                                 'mbr-ml-auto':alignTitle==3}\">\n                    <amp-img src=\"@PROJECT_PATH@/assets/images/mbr-1-1920x1281.jpeg\" layout=\"responsive\" width=\"473.65599311926604\" height=\"289.438\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                        <div placeholder class=\"placeholder\"></div>\n                        <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/mbr-1-1920x1281.jpeg\" alt=\"Mobirise\" title>\n                    </amp-img>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"features2\" group=\"Features\" mbr-class=\"{'mbr-fullscreen': fullScreen}\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Row/Column\" name=\"blockDirection\">\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"checkbox\" title=\"Reverse Content\" name=\"reverseContent\" condition=\"!blockDirection\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Left/Right\" name=\"columnWidth\" min=\"1\" max=\"5\" step=\"1\" value=\"4\" condition=\"!blockDirection\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <!--  -->\n    <header condition=\"showTitle || showSubtitle || showText || showButtons\">Align</header>\n    <select title=\"All\" name=\"alignTitle\" condition=\"(showTitle || showSubtitle || showText || showButtons) && blockDirection\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <select title=\"Text\" name=\"alignContent\" condition=\"(showTitle || showSubtitle || showText || showButtons) && !blockDirection\">\n        <option value=\"1\" selected>Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header condition=\"blockDirection\">Content</header>\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"1\" max=\"6\" step=\"1\" value=\"3\" condition=\"blockDirection\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/mbr-2-1920x1275.jpeg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#81aa97\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class mbr-class=\"{'container':!fullWidth,\n                     'container-fluid': fullWidth}\">\n        <div class=\"mbr-row mbr-px-2 mbr-black\" mbr-class=\"{'mbr-row-reverse': reverseContent}\">\n            <div class=\"title-wrap mbr-col-md-12 mbr-col-sm-12\" mbr-class=\"{'mbr-col-lg-3':columnWidth==1 && !blockDirection,\n                             'mbr-col-lg-4':columnWidth==2 && !blockDirection,\n                             'mbr-col-lg-6':columnWidth==3 && !blockDirection,\n                             'mbr-col-lg-8':columnWidth==4 && !blockDirection,\n                             'mbr-col-lg-9':columnWidth==5 && !blockDirection,\n                             'mbr-col-lg-12':blockDirection,\n                             'align-left':(alignTitle==1 && blockDirection) || (alignContent==1 && !blockDirection),\n                             'align-center':(alignTitle==2 && blockDirection) || (alignContent==2 && !blockDirection),\n                             'align-right':(alignTitle==3 && blockDirection) || (alignContent==3 && !blockDirection),\n                             'mbr-pb-4': blockDirection,\n                             'mbr-flex': !blockDirection}\" mbr-if=\"showTitle || showSubtitle || showText || showButtons\">\n                <div class=\"title-block mbr-col-sm-12 mbr-col-md-12\">\n                    <h1 class=\"mbr-section-title mbr-fonts-style mbr-bold\" mbr-class=\"{'mbr-pb-3': showSubtitle || showText}\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .mbr-section-btn\">REACH YOUR\n<div>GOALS WITH US</div></h1>\n                    <h2 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-class=\"{'mbr-pb-2':showText}\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\"></h2>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-section-btn, .mbr-text\"></p><p>Deze dag staat jouw stem centraal. <br>Iedereen kan zingen, ook al voelen we soms schroom of terughoudendheid om onze stem te laten horen. We hebben maar al te snel een oordeel over hoe we zingen. <br>Hoe zou het zijn als je met open oren kan luisteren naar jouw eigen klank en je laat verrassen door jouw eigen muziek? Welke muziek wil zich nu laten horen? Wat dient zich aan? Dat is waar stembevrijding over gaat: zingen wat er in je leeft. En dat levert prachtige muziek op!\n<br><br>Deze workshop Stembevrijding is voor mensen die graag (willen) zingen, maar niet durven, denken dat ze niet kunnen zingen, of zich juist meer voluit willen laten horen. De dag bestaat o.a. uit lichaamswerk, klank- en improvisatie-oefeningen om jouw moeiteloze geluid steeds meer naar buiten te brengen. Daarin kan niets fout gaan, want het gaat er juist om dat je naar buiten brengt wat er in je leeft. En uiteraard wordt er ook samen gezongen.<br><br>Begeleiding: Petra Welboren en Ton van Wolde<br>Datum: 26 mei 2024<br>Locatie: Geldrops Kwartier, Rederijkerstraat 6, 5663 EB Geldrop<br>Tijd: 10:00 - 16:30<br>Aantal deelnemers: 12<br>Kosten: € 95,-, inclusief koffie, thee en lekkers<br></p><p></p>\n                    <div mbr-buttons class=\"mbr-section-btn\" mbr-class=\"{'mbr-pt-4':showSubtitle||showTitle||showText}\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\" mbr-if=\"showButtons\"><a class=\"btn btn-white-outline\" data-app-placeholder=\"Type Text\" href=\"page7.html\">ik wil graag meer weten&nbsp;</a></div>\n                </div>\n            </div>\n            <div class=\"image-wrap mbr-col-md-12 mbr-col-sm-12\" mbr-class=\"{'mbr-col-lg-3':columnWidth==5 && !blockDirection,\n                             'mbr-col-lg-4':columnWidth==4 && !blockDirection,\n                             'mbr-col-lg-6':columnWidth==3 && !blockDirection,\n                             'mbr-col-lg-8':columnWidth==2 && !blockDirection,\n                             'mbr-col-lg-9':columnWidth==1 && !blockDirection,\n                             'mbr-col-lg-12':blockDirection,\n                             'mbr-flex':!blockDirection}\">\n                <div class=\"image-block mbr-col-md-12 mbr-col-sm-12\" mbr-class=\"{'mbr-col-lg-3':contentWidth==1 && blockDirection,\n                                 'mbr-col-lg-4':contentWidth==2 && blockDirection,\n                                 'mbr-col-lg-6':contentWidth==3 && blockDirection,\n                                 'mbr-col-lg-8':contentWidth==4 && blockDirection,\n                                 'mbr-col-lg-9':contentWidth==5 && blockDirection,\n                                 'mbr-mr-auto':alignTitle==1,\n                                 'mbr-m-auto':alignTitle==2,\n                                 'mbr-ml-auto':alignTitle==3}\">\n                    <amp-img src=\"@PROJECT_PATH@/assets/images/mbr-1-1920x1281.jpeg\" layout=\"responsive\" width=\"537.6304323394496\" height=\"328.531\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                        <div placeholder class=\"placeholder\"></div>\n                        <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/mbr-1-1920x1281.jpeg\" alt=\"Mobirise\" title>\n                    </amp-img>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "sc4Y3GcloT",
           "_anchor": "features2-2k",
           "_sourceTheme": "sportamp",
@@ -4177,7 +4177,7 @@
           },
           "_name": "pricing-table2",
           "_sourceTheme": "sportamp",
-          "_customHTML": "<section class=\"pricing-table2\" group=\"Pricing Tables\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Row Padding\" name=\"rowPadding\" min=\"0.5\" max=\"3\" step=\"0.25\" value=\"1.25\">\n    <input type=\"range\" inline title=\"Rows Count\" name=\"rowsCount\" min=\"1\" max=\"10\" value=\"1\" step=\"1\">\n    <header>Title</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n    <input type=\"checkbox\" title=\"Show Line\" name=\"showLine\">\n    <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#fe7902\" condition=\"showLine\">          \n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\" selected>Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>        \n    <header>Background</header>\n    <input type=\"color\" title=\"Background Color\" name=\"bg\" value=\"#81aa97\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container-fluid': fullWidth,\n                     'container': !fullWidth}\">\n        \n\n            <div class=\"title mbr-px-4\" mbr-class=\"{'align-center':titleAlign==2,\n                             'align-right':titleAlign==3}\" mbr-if=\"showTitle\">\n                <h3 class=\"mbr-section-title mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\">AGENDA</span></h3>\n            </div>\n\n        \n        <div class=\"rows-list mbr-px-5\" mbr-list mbr-list-grow=\"rowsCount\">\n            <div class=\"mbr-row rowPadding mbr-px-4\">\n                <div class=\"mbr-col-md-3 mbr-col-sm-12 align-left mbr-px-0\"><p class=\"mbr-text1 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text1\"><a href=\"https://hipsy.nl/event/49103-zangcirkel\" class=\"text-white text-primary\" target=\"_blank\">ZangCirkel</a></p></div>\n                <div class=\"mbr-col-md-7 mbr-col-sm-12 mbr-px-0\"><p class=\"mbr-text2 mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text2\">Een avond samen mantra's zingen<br>Agnus Dei-Kerk, Koningin Julianalaan 12, 5582 JV Waalre <br></p></div>\n                <div class=\"mbr-col-md-2 mbr-col-sm-12 align-right\"><p class=\"mbr-text3 mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text3\"><a href=\"https://hipsy.nl/event/55462-zangcirkel-waalre\" class=\"text-black\">22 mei&nbsp;2024</a><br><a href=\"https://hipsy.nl/event/49103-zangcirkel\" class=\"text-black text-primary\">19:30&nbsp;- 21:30</a><br></p></div>\n            </div>\n            \n            </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"pricing-table2\" group=\"Pricing Tables\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Row Padding\" name=\"rowPadding\" min=\"0.5\" max=\"3\" step=\"0.25\" value=\"1.25\">\n    <input type=\"range\" inline title=\"Rows Count\" name=\"rowsCount\" min=\"1\" max=\"10\" value=\"1\" step=\"1\">\n    <header>Title</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n    <input type=\"checkbox\" title=\"Show Line\" name=\"showLine\">\n    <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#fe7902\" condition=\"showLine\">          \n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\" selected>Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>        \n    <header>Background</header>\n    <input type=\"color\" title=\"Background Color\" name=\"bg\" value=\"#81aa97\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container-fluid': fullWidth,\n                     'container': !fullWidth}\">\n        \n\n            <div class=\"title mbr-px-4\" mbr-class=\"{'align-center':titleAlign==2,\n                             'align-right':titleAlign==3}\" mbr-if=\"showTitle\">\n                <h3 class=\"mbr-section-title mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\">AGENDA</span></h3>\n            </div>\n\n        \n        <div class=\"rows-list mbr-px-5\" mbr-list mbr-list-grow=\"rowsCount\">\n            <div class=\"mbr-row rowPadding mbr-px-4\">\n                <div class=\"mbr-col-md-3 mbr-col-sm-12 align-left mbr-px-0\"><p class=\"mbr-text1 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text1\"><a href=\"https://hipsy.nl/event/55462-zangcirkel-waalre\" class=\"text-white text-primary\" target=\"_blank\">ZangCirkel</a></p></div>\n                <div class=\"mbr-col-md-7 mbr-col-sm-12 mbr-px-0\"><p class=\"mbr-text2 mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text2\">Een avond samen mantra's zingen<br>Agnus Dei-Kerk, Koningin Julianalaan 12, 5582 JV Waalre <br></p></div>\n                <div class=\"mbr-col-md-2 mbr-col-sm-12 align-right\"><p class=\"mbr-text3 mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text3\"><a href=\"https://hipsy.nl/event/55462-zangcirkel-waalre\" class=\"text-black text-primary\" target=\"_blank\">22 mei&nbsp;2024</a><br><a href=\"https://hipsy.nl/event/55462-zangcirkel-waalre\" class=\"text-black text-primary\" target=\"_blank\">19:30&nbsp;- 21:30</a><br></p></div>\n            </div>\n            \n            </div>\n    </div>\n</section>",
           "_anchor": "pricing-table2-4n",
           "_isUserblock": true,
           "_cid": "tZ0JcIprGb",
@@ -4243,7 +4243,7 @@
           },
           "_name": "pricing-table2",
           "_sourceTheme": "sportamp",
-          "_customHTML": "<section class=\"pricing-table2\" group=\"Pricing Tables\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Row Padding\" name=\"rowPadding\" min=\"0.5\" max=\"3\" step=\"0.25\" value=\"1.25\">\n    <input type=\"range\" inline title=\"Rows Count\" name=\"rowsCount\" min=\"1\" max=\"10\" value=\"1\" step=\"1\">\n    <header>Title</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n    <input type=\"checkbox\" title=\"Show Line\" name=\"showLine\">\n    <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#fe7902\" condition=\"showLine\">          \n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\" selected>Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>        \n    <header>Background</header>\n    <input type=\"color\" title=\"Background Color\" name=\"bg\" value=\"#81aa97\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container-fluid': fullWidth,\n                     'container': !fullWidth}\">\n        \n\n            <div class=\"title mbr-px-4\" mbr-class=\"{'align-center':titleAlign==2,\n                             'align-right':titleAlign==3}\" mbr-if=\"showTitle\">\n                <h3 class=\"mbr-section-title mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\">AGENDA</span></h3>\n            </div>\n\n        \n        <div class=\"rows-list mbr-px-5\" mbr-list mbr-list-grow=\"rowsCount\">\n            <div class=\"mbr-row rowPadding mbr-px-4\">\n                <div class=\"mbr-col-md-3 mbr-col-sm-12 align-left mbr-px-0\"><p class=\"mbr-text1 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text1\"><a href=\"page9.html\" class=\"text-white\">Ik zing?!</a></p></div>\n                <div class=\"mbr-col-md-7 mbr-col-sm-12 mbr-px-0\"><p class=\"mbr-text2 mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text2\">Dompel je onder in een dag stembevrijding en zet stappen op weg naar jouw moeiteloze geluid<br>Geldrops Kwartier, Rederijkerstraat 6, 5663 EB Geldrop</p></div>\n                <div class=\"mbr-col-md-2 mbr-col-sm-12 align-right\"><p class=\"mbr-text3 mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text3\"><a href=\"page7.html\" class=\"text-black\">26 mei 2024</a><br><a href=\"page7.html\" class=\"text-black\">10:00 - 16:30</a><br></p></div>\n            </div>\n            \n            </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"pricing-table2\" group=\"Pricing Tables\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Row Padding\" name=\"rowPadding\" min=\"0.5\" max=\"3\" step=\"0.25\" value=\"1.25\">\n    <input type=\"range\" inline title=\"Rows Count\" name=\"rowsCount\" min=\"1\" max=\"10\" value=\"1\" step=\"1\">\n    <header>Title</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n    <input type=\"checkbox\" title=\"Show Line\" name=\"showLine\">\n    <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#fe7902\" condition=\"showLine\">          \n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\" selected>Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>        \n    <header>Background</header>\n    <input type=\"color\" title=\"Background Color\" name=\"bg\" value=\"#81aa97\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container-fluid': fullWidth,\n                     'container': !fullWidth}\">\n        \n\n            <div class=\"title mbr-px-4\" mbr-class=\"{'align-center':titleAlign==2,\n                             'align-right':titleAlign==3}\" mbr-if=\"showTitle\">\n                <h3 class=\"mbr-section-title mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\">AGENDA</span></h3>\n            </div>\n\n        \n        <div class=\"rows-list mbr-px-5\" mbr-list mbr-list-grow=\"rowsCount\">\n            <div class=\"mbr-row rowPadding mbr-px-4\">\n                <div class=\"mbr-col-md-3 mbr-col-sm-12 align-left mbr-px-0\"><p class=\"mbr-text1 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text1\"><a href=\"page9.html\" class=\"text-white\">Ik zing?!</a></p></div>\n                <div class=\"mbr-col-md-7 mbr-col-sm-12 mbr-px-0\"><p class=\"mbr-text2 mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text2\">Dompel je onder in een dag stembevrijding en zet stappen op weg naar jouw moeiteloze geluid<br>Geldrops Kwartier, Rederijkerstraat 6, 5663 EB Geldrop</p></div>\n                <div class=\"mbr-col-md-2 mbr-col-sm-12 align-right\"><p class=\"mbr-text3 mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text3\"><a href=\"https://hipsy.nl/event/49102-ik-zing-workshop-stembevrijding\" class=\"text-black text-primary\" target=\"_blank\">26 mei 2024</a><br><a href=\"https://hipsy.nl/event/49102-ik-zing-workshop-stembevrijding\" class=\"text-black text-primary\" target=\"_blank\">10:00 - 16:30</a><br></p></div>\n            </div>\n            \n            </div>\n    </div>\n</section>",
           "_anchor": "pricing-table2-4s",
           "_isUserblock": true,
           "_cid": "u7y0Fv4xSp",
@@ -4908,43 +4908,6 @@
         {
           "alias": false,
           "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              ".mbr-overlay": {
-                "background-color": "@overlayColor",
-                "opacity": "@overlayOpacity"
-              }
-            },
-            "@media (max-width: 768px)": {
-              ".title-wrap": {
-                "padding-bottom": "2rem"
-              }
-            },
-            ".mbr-section-title": {
-              "color": "#81aa97"
-            },
-            ".mbr-text": {
-              "color": "#81aa97"
-            }
-          },
-          "_name": "article1",
-          "_customHTML": "<section class=\"article1\" group=\"Article\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"title\" mbr-class=\"{'align-center':titleAlign==2,\n                         'align-right':titleAlign==3}\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\">zing!</span></h3>\n            <h4 class=\"mbr-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text\">Vier avonden stembevrijding<br><br></h4>\n        </div>\n    </div>\n</section>",
-          "_cid": "t3ypDk85Ty",
-          "_anchor": "article1-3j",
-          "_sourceTheme": "sportamp",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
             "background-color": "@menuBgColor",
             "padding": "0",
             ".navbar": {
@@ -5046,6 +5009,43 @@
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".title-wrap": {
+                "padding-bottom": "2rem"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#81aa97"
+            },
+            ".mbr-text": {
+              "color": "#81aa97"
+            }
+          },
+          "_name": "article1",
+          "_customHTML": "<section class=\"article1\" group=\"Article\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"title\" mbr-class=\"{'align-center':titleAlign==2,\n                         'align-right':titleAlign==3}\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\">zing!</span></h3>\n            <h4 class=\"mbr-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text\">Vier avonden stembevrijding<br><br></h4>\n        </div>\n    </div>\n</section>",
+          "_cid": "t3ypDk85Ty",
+          "_anchor": "article1-3j",
+          "_sourceTheme": "sportamp",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
           "_params": {}
         },
         {
@@ -5220,43 +5220,6 @@
         {
           "alias": false,
           "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              ".mbr-overlay": {
-                "background-color": "@overlayColor",
-                "opacity": "@overlayOpacity"
-              }
-            },
-            "@media (max-width: 768px)": {
-              ".title-wrap": {
-                "padding-bottom": "2rem"
-              }
-            },
-            ".mbr-section-title": {
-              "color": "#81aa97"
-            },
-            ".mbr-text": {
-              "color": "#81aa97"
-            }
-          },
-          "_name": "article1",
-          "_customHTML": "<section class=\"article1\" group=\"Article\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"title\" mbr-class=\"{'align-center':titleAlign==2,\n                         'align-right':titleAlign==3}\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\">Ruimte en Overvloed</span></h3>\n            <h4 class=\"mbr-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text\">Jouw stem brengt je naar de ruimte die je bent</h4>\n        </div>\n    </div>\n</section>",
-          "_sourceTheme": "sportamp",
-          "_cid": "tIWZX9FdFw",
-          "_anchor": "article1-40",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
             "background-color": "@menuBgColor",
             "padding": "0",
             ".navbar": {
@@ -5358,6 +5321,43 @@
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".title-wrap": {
+                "padding-bottom": "2rem"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#81aa97"
+            },
+            ".mbr-text": {
+              "color": "#81aa97"
+            }
+          },
+          "_name": "article1",
+          "_customHTML": "<section class=\"article1\" group=\"Article\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"title\" mbr-class=\"{'align-center':titleAlign==2,\n                         'align-right':titleAlign==3}\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\">Ruimte en Overvloed</span></h3>\n            <h4 class=\"mbr-text mbr-fonts-style mbr-pt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text\">Jouw stem brengt je naar de ruimte die je bent</h4>\n        </div>\n    </div>\n</section>",
+          "_sourceTheme": "sportamp",
+          "_cid": "tIWZX9FdFw",
+          "_anchor": "article1-40",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
           "_params": {}
         },
         {
