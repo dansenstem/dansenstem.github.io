@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "Stembevrijding.html",
+    "currentPage": "Destemvanvrijheid.html",
     "theme": {
       "name": "sportamp",
       "title": "SportAMP",
@@ -5254,7 +5254,7 @@
         }
       ]
     },
-    "DeStemvanvrijheid.html": {
+    "Destemvanvrijheid.html": {
       "settings": {
         "title": "De stem van vrijheid",
         "order": "10"
