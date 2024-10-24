@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "Dansimprovisatie.html",
+    "currentPage": "overPetra.html",
     "theme": {
       "name": "sportamp",
       "title": "SportAMP",
@@ -94,7 +94,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 227,
+    "uniqCompNum": 229,
     "versionPublish": "5.9.18",
     "screenshot": "screenshot.png",
     "favicon": false,
@@ -620,6 +620,48 @@
           "_cid": "s8zEXGCIxu",
           "_anchor": "article3-1j",
           "_sourceTheme": "sportamp",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".title-wrap": {
+                "padding-bottom": "2rem"
+              }
+            },
+            ".mbr-section-btn": {
+              "width": "100%",
+              "text-align": "center",
+              "@media (max-width: 768px)": {
+                "text-align": "left"
+              },
+              ".btn": {
+                "margin": "0"
+              }
+            }
+          },
+          "_name": "info1",
+          "_sourceTheme": "sportamp",
+          "_customHTML": "<section class=\"info1\" group=\"Info\" plugins=\"amp-main, amp-form, amp-mustache\">\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\" selected>Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background2.jpg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type == 'image'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container mbr-px-5\">\n        <div class=\"mbr-row mbr-jc-c\" mbr-class=\"{'mbr-row-reverse': reverseContent}\">\n            <div class=\"title-wrap mbr-col-lg-8 mbr-col-md-8 mbr-col-sm-12 mbr-flex mbr-column mbr-jc-c\" mbr-class=\"{'align-center': titleAlign == 2, 'align-right': titleAlign == 3}\" mbr-if=\"showTitle || showSubtitle\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">en ja kom gewoon</h3>\n                <p class=\"mbr-text mbr-fonts-style mbr-pt-4\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text\">Luster je mee? Ik was te gast in de Gretig Inspiratiepodcast van Ingrid Bijlmakers - Gretig Coaching. Een gesprek over stembevrijing, haar ervaringen hiermee, en over stembevrijding.</p>\n            </div>\n            <div class=\"btn-wrap mbr-col-lg-4 mbr-col-md-4 mbr-col-sm-12 mbr-flex mbr-column\">\n                <div class=\"mbr-section-btn mbr-m-auto\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-primary\" href=\"https://open.spotify.com/episode/0vxwFLKNqE3I3q8Fg4tVp3?si=15e489b0630441b2\" data-app-placeholder=\"Type Text\" target=\"_blank\">Luister hier!</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "info1-6c",
+          "_isUserblock": true,
+          "_cid": "us9rO9tn8p",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
