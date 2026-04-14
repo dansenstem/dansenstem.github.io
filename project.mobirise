@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "Stembevrijding.html",
+    "currentPage": "Agenda.html",
     "theme": {
       "name": "sportamp",
       "title": "SportAMP",
@@ -2052,7 +2052,7 @@
           },
           "_name": "pricing-table2",
           "_sourceTheme": "sportamp",
-          "_customHTML": "<section class=\"pricing-table2\" group=\"Pricing Tables\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Row Padding\" name=\"rowPadding\" min=\"0.5\" max=\"3\" step=\"0.25\" value=\"1.25\">\n    <input type=\"range\" inline title=\"Rows Count\" name=\"rowsCount\" min=\"1\" max=\"10\" value=\"1\" step=\"1\">\n    <header>Title</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n    <input type=\"checkbox\" title=\"Show Line\" name=\"showLine\">\n    <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#fe7902\" condition=\"showLine\">          \n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\" selected>Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>        \n    <header>Background</header>\n    <input type=\"color\" title=\"Background Color\" name=\"bg\" value=\"#a7c4b6\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container-fluid': fullWidth,\n                     'container': !fullWidth}\">\n        \n\n            <div class=\"title mbr-px-4\" mbr-class=\"{'align-center':titleAlign==2,\n                             'align-right':titleAlign==3}\" mbr-if=\"showTitle\">\n                <h3 class=\"mbr-section-title mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\">AGENDA</span></h3>\n            </div>\n\n        \n        <div class=\"rows-list mbr-px-5\" mbr-list mbr-list-grow=\"rowsCount\">\n            <div class=\"mbr-row rowPadding mbr-px-4\">\n                <div class=\"mbr-col-md-3 mbr-col-sm-12 align-left mbr-px-0\"><p class=\"mbr-text1 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text1\"><a href=\"DansimprovisatieEindhoven.html\" class=\"text-white text-primary\">Dansimprovisatie</a></p></div>\n                <div class=\"mbr-col-md-7 mbr-col-sm-12 mbr-px-0\"><p class=\"mbr-text2 mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text2\">Blok van 10 lessen dansimprovisatie. <br>Zaterdag, dansschool Pulse in Eindhoven en bij mooi weer buiten (landgoed Eikenburg)<i><br></i><br><i>Blok 2:&nbsp;</i>10, 17 en 31 januari, 7, 14, en 28 februari, 7, 14, 21 en 28 maart<br><i>Blok 3</i>: 4, 11 en 18 april, 16, 23 en 30 mei, 6, 13 en 20 en 27 juni&nbsp;<br><br>Meld je <a href=\"Contact.html\" class=\"text-black\" target=\"_blank\">hier</a> aan voor een proefles<i></i></p></div>\n                <div class=\"mbr-col-md-2 mbr-col-sm-12 align-right\"><p class=\"mbr-text3 mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text3\">Blok 3 start op <br>4 april<br>9:30 - 10:45<br></p></div>\n            </div>\n            \n            </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"pricing-table2\" group=\"Pricing Tables\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Row Padding\" name=\"rowPadding\" min=\"0.5\" max=\"3\" step=\"0.25\" value=\"1.25\">\n    <input type=\"range\" inline title=\"Rows Count\" name=\"rowsCount\" min=\"1\" max=\"10\" value=\"1\" step=\"1\">\n    <header>Title</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n    <input type=\"checkbox\" title=\"Show Line\" name=\"showLine\">\n    <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#fe7902\" condition=\"showLine\">          \n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\" selected>Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>        \n    <header>Background</header>\n    <input type=\"color\" title=\"Background Color\" name=\"bg\" value=\"#a7c4b6\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container-fluid': fullWidth,\n                     'container': !fullWidth}\">\n        \n\n            <div class=\"title mbr-px-4\" mbr-class=\"{'align-center':titleAlign==2,\n                             'align-right':titleAlign==3}\" mbr-if=\"showTitle\">\n                <h3 class=\"mbr-section-title mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\">AGENDA</span></h3>\n            </div>\n\n        \n        <div class=\"rows-list mbr-px-5\" mbr-list mbr-list-grow=\"rowsCount\">\n            <div class=\"mbr-row rowPadding mbr-px-4\">\n                <div class=\"mbr-col-md-3 mbr-col-sm-12 align-left mbr-px-0\"><p class=\"mbr-text1 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text1\"><a href=\"DansimprovisatieEindhoven.html\" class=\"text-white text-primary\">Dansimprovisatie</a></p></div>\n                <div class=\"mbr-col-md-7 mbr-col-sm-12 mbr-px-0\"><p class=\"mbr-text2 mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text2\">Blok van 10 lessen dansimprovisatie. <br>Zaterdag, dansschool Pulse in Eindhoven en bij mooi weer buiten (landgoed Eikenburg)<i><br></i><br><i>Blok 3</i>: 4, 11 en 18 april, 16, 23 en 30 mei, 6, 13 en 20 en 27 juni&nbsp;<br><br>Meld je <i><a href=\"Contact.html\" class=\"text-black\" target=\"_blank\">hier</a> </i>aan voor een proefles<i></i></p></div>\n                <div class=\"mbr-col-md-2 mbr-col-sm-12 align-right\"><p class=\"mbr-text3 mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text3\">Blok 3 start op <br>4 april<br>9:30 - 10:45<br></p></div>\n            </div>\n            \n            </div>\n    </div>\n</section>",
           "_anchor": "pricing-table2-4m",
           "_isUserblock": true,
           "_cid": "tQQLicXU2e",
@@ -2123,6 +2123,72 @@
           "_anchor": "pricing-table2-7j",
           "_isUserblock": true,
           "_cid": "v7h3sb6RIy",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bg",
+            ".mbr-section-btn, .mbr-text": {
+              "font-family": "'Poppins', sans-serif",
+              "text-align": "left"
+            },
+            ".rowPadding": {
+              "padding-top": "(@rowPadding * 1rem)",
+              "padding-bottom": "(@rowPadding * 1rem)",
+              "border-bottom": "1px solid #b3b3b3",
+              "& > div": {
+                "@media (max-width: 768px)": {
+                  "padding-bottom": ".5rem"
+                }
+              }
+            },
+            ".title": {
+              "padding-bottom": "2rem",
+              "width": "100%"
+            },
+            "& when (@showLine) and (@titleAlign = \"1\")": {
+              ".mbr-section-title": {
+                "&:after": {
+                  "margin-left": "1rem",
+                  "content": "' '",
+                  "background-color": "@lineColor",
+                  "height": "4px",
+                  "width": "200px",
+                  "display": "inline-block",
+                  "@media (max-width: 992px)": {
+                    "display": "none"
+                  }
+                }
+              }
+            },
+            ".mbr-px-0": {
+              "padding": "0"
+            },
+            ".mbr-text1": {
+              "color": "#ffffff"
+            },
+            ".mbr-section-title": {
+              "color": "#fe7902"
+            },
+            ".mbr-text3": {
+              "text-align": "left"
+            },
+            ".mbr-text2": {
+              "text-align": "left"
+            }
+          },
+          "_name": "pricing-table2",
+          "_sourceTheme": "sportamp",
+          "_customHTML": "<section class=\"pricing-table2\" group=\"Pricing Tables\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Row Padding\" name=\"rowPadding\" min=\"0.5\" max=\"3\" step=\"0.25\" value=\"1.25\">\n    <input type=\"range\" inline title=\"Rows Count\" name=\"rowsCount\" min=\"1\" max=\"10\" value=\"1\" step=\"1\">\n    <header>Title</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n    <input type=\"checkbox\" title=\"Show Line\" name=\"showLine\">\n    <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#fe7902\" condition=\"showLine\">          \n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\" selected>Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>        \n    <header>Background</header>\n    <input type=\"color\" title=\"Background Color\" name=\"bg\" value=\"#a7c4b6\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container-fluid': fullWidth,\n                     'container': !fullWidth}\">\n        \n\n            <div class=\"title mbr-px-4\" mbr-class=\"{'align-center':titleAlign==2,\n                             'align-right':titleAlign==3}\" mbr-if=\"showTitle\">\n                <h3 class=\"mbr-section-title mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\">AGENDA</span></h3>\n            </div>\n\n        \n        <div class=\"rows-list mbr-px-5\" mbr-list mbr-list-grow=\"rowsCount\">\n            <div class=\"mbr-row rowPadding mbr-px-4\">\n                <div class=\"mbr-col-md-3 mbr-col-sm-12 align-left mbr-px-0\"><p class=\"mbr-text1 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text1\"><a href=\"page15.html\" class=\"text-white\">Zing mee met Jan Kortie</a></p></div>\n                <div class=\"mbr-col-md-7 mbr-col-sm-12 mbr-px-0\"><p class=\"mbr-text2 mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text2\">Workshop stembevrijding en Mantra-avond<br>- Workshop stembevrijding 14:00- 17:00<br>- Mantra-avond: 19:30 - 21:30<br><br>Ticket via <i><a href=\"https://hipsy.nl/event/202103-workshop-stembevrijding-en-mantra-avond-met-jan-kortie\" class=\"text-black\" target=\"_blank\">Hipsy</a></i></p></div>\n                <div class=\"mbr-col-md-2 mbr-col-sm-12 align-right\"><p class=\"mbr-text3 mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text3\">2 okt<br><a href=\"Contact.html\" class=\"text-black\"><br></a><br></p></div>\n            </div>\n            \n            </div>\n    </div>\n</section>",
+          "_anchor": "pricing-table2-7r",
+          "_isUserblock": true,
+          "_cid": "vgKvyHPlQr",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -2256,72 +2322,6 @@
           "_anchor": "pricing-table2-3x",
           "_isUserblock": true,
           "_cid": "tw0XmqN4CX",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "background-color": "@bg",
-            ".mbr-section-btn, .mbr-text": {
-              "font-family": "'Poppins', sans-serif",
-              "text-align": "left"
-            },
-            ".rowPadding": {
-              "padding-top": "(@rowPadding * 1rem)",
-              "padding-bottom": "(@rowPadding * 1rem)",
-              "border-bottom": "1px solid #b3b3b3",
-              "& > div": {
-                "@media (max-width: 768px)": {
-                  "padding-bottom": ".5rem"
-                }
-              }
-            },
-            ".title": {
-              "padding-bottom": "2rem",
-              "width": "100%"
-            },
-            "& when (@showLine) and (@titleAlign = \"1\")": {
-              ".mbr-section-title": {
-                "&:after": {
-                  "margin-left": "1rem",
-                  "content": "' '",
-                  "background-color": "@lineColor",
-                  "height": "4px",
-                  "width": "200px",
-                  "display": "inline-block",
-                  "@media (max-width: 992px)": {
-                    "display": "none"
-                  }
-                }
-              }
-            },
-            ".mbr-px-0": {
-              "padding": "0"
-            },
-            ".mbr-text1": {
-              "color": "#ffffff"
-            },
-            ".mbr-section-title": {
-              "color": "#fe7902"
-            },
-            ".mbr-text3": {
-              "text-align": "left"
-            },
-            ".mbr-text2": {
-              "text-align": "left"
-            }
-          },
-          "_name": "pricing-table2",
-          "_sourceTheme": "sportamp",
-          "_customHTML": "<section class=\"pricing-table2\" group=\"Pricing Tables\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Row Padding\" name=\"rowPadding\" min=\"0.5\" max=\"3\" step=\"0.25\" value=\"1.25\">\n    <input type=\"range\" inline title=\"Rows Count\" name=\"rowsCount\" min=\"1\" max=\"10\" value=\"1\" step=\"1\">\n    <header>Title</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n    <input type=\"checkbox\" title=\"Show Line\" name=\"showLine\">\n    <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#fe7902\" condition=\"showLine\">          \n    <select title=\"Align\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\" selected>Left</option>\n        <option value=\"2\">Center</option>\n        <option value=\"3\">Right</option>\n    </select>        \n    <header>Background</header>\n    <input type=\"color\" title=\"Background Color\" name=\"bg\" value=\"#a7c4b6\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container-fluid': fullWidth,\n                     'container': !fullWidth}\">\n        \n\n            <div class=\"title mbr-px-4\" mbr-class=\"{'align-center':titleAlign==2,\n                             'align-right':titleAlign==3}\" mbr-if=\"showTitle\">\n                <h3 class=\"mbr-section-title mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\">AGENDA</span></h3>\n            </div>\n\n        \n        <div class=\"rows-list mbr-px-5\" mbr-list mbr-list-grow=\"rowsCount\">\n            <div class=\"mbr-row rowPadding mbr-px-4\">\n                <div class=\"mbr-col-md-3 mbr-col-sm-12 align-left mbr-px-0\"><p class=\"mbr-text1 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text1\"><a href=\"page15.html\" class=\"text-white\">Zing mee met Jan Kortie</a></p></div>\n                <div class=\"mbr-col-md-7 mbr-col-sm-12 mbr-px-0\"><p class=\"mbr-text2 mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text2\">Workshop stembevrijding en Mantra-avond<br>- Workshop stembevrijding 14:00- 17:00<br>- Mantra-avond: 19:30 - 21:30<br><br>Ticket via <i><a href=\"https://hipsy.nl/event/202103-workshop-stembevrijding-en-mantra-avond-met-jan-kortie\" class=\"text-black\" target=\"_blank\">Hipsy</a></i></p></div>\n                <div class=\"mbr-col-md-2 mbr-col-sm-12 align-right\"><p class=\"mbr-text3 mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text3\">2 okt<br><a href=\"Contact.html\" class=\"text-black\"><br></a><br></p></div>\n            </div>\n            \n            </div>\n    </div>\n</section>",
-          "_anchor": "pricing-table2-7r",
-          "_isUserblock": true,
-          "_cid": "vgKvyHPlQr",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
