@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "Agenda.html",
+    "currentPage": "LessenEindhoven.html",
     "theme": {
       "name": "sportamp",
       "title": "SportAMP",
@@ -104,7 +104,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "publishChangesOnly": false,
+    "publishChangesOnly": true,
     "mbrsiteDomain": "hhs8qqtitk"
   },
   "pages": {
